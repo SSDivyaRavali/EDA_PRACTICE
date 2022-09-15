@@ -41,7 +41,7 @@ def update_graph(directors):
       director_select = directors
     
     filtered_final = imdb_movies_cleaned_income_explode_director.loc[imdb_movies_cleaned_income_explode_director['director_list'].str.contains(director_select,na=False)]
-    print(filtered_final.shape)
+    
     
     scatter_fig = px.scatter(filtered_final,
                        x='worldwide_gross_income', y='imdb_score',hover_name='original_title',
