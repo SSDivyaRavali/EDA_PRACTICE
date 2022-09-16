@@ -34,4 +34,3 @@ movies_director = imdb_movies_cleaned_income_explode_director.groupby('director_
 movies_director.sort_values(by='no_of_movies',ascending=False,inplace=True)
 
 directors = list(movies_director[:10]['director_list'])+ ['All Top 10 Directors']
-#print(directors)
