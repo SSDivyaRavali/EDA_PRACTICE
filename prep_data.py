@@ -1,6 +1,6 @@
 import pandas as pd
 
-imdb_movies = pd.read_csv('../Data/IMDb movies.csv')
+imdb_movies = pd.read_csv('./Data/IMDb movies.csv')
 imdb_movies.drop(['title','reviews_from_users','reviews_from_critics','writer','production_company','description','usa_gross_income','metascore'],axis=1,inplace=True)
 imdb_movies.rename({'worlwide_gross_income':'worldwide_gross_income','avg_vote':'imdb_score'},axis=1,inplace=True)
 
